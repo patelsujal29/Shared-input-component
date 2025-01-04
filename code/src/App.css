@@ -1,0 +1,190 @@
+/* General Form Styles */
+.dynamic-form-container {
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 12px;
+  background: linear-gradient(145deg, #e0e0e0, #ffffff);
+  box-shadow: 8px 8px 16px #b0b0b0, -8px -8px 16px #ffffff;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Form title */
+.dynamic-form-container h2 {
+  font-family: "Arial", sans-serif;
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #555;
+  text-shadow: 1px 1px 2px #aaa;
+}
+
+/* Form group styling */
+.form-group {
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+/* Label styling */
+.form-group label {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #666;
+  transition: color 0.3s ease;
+}
+
+.form-group:hover label {
+  color: #444;
+}
+
+/* Input, textarea, and select styling */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+  font-size: 1rem;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 100%;
+  box-sizing: border-box;
+  background: #f0f0f0;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+textarea:focus {
+  outline: none;
+  border-color: #888;
+  box-shadow: 0 4px 8px rgba(136, 136, 136, 0.3);
+}
+
+/* Checkbox and radio styling */
+/* Checkbox and radio styling */
+input[type="checkbox"],
+input[type="radio"] {
+  margin-right: 0.5rem; /* Adds space to the right of checkbox */
+  transform: scale(1.2); /* Scales the size */
+  display: inline-block; /* Ensures checkboxes and radios are inline with text */
+  vertical-align: middle; /* Aligns the checkbox/radio with label vertically */
+}
+
+
+input[type="radio"] + label,
+input[type="checkbox"] + label {
+  display: inline-block; /* Ensures label aligns correctly */
+  font-size: 0.95rem;
+  color: #555;
+  cursor: pointer;
+  vertical-align: middle; /* Aligns the label correctly with checkbox */
+}
+
+/* Button styling */
+button {
+  display: inline-block;
+  background-color: #666;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+  margin-top: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  background-color: #444;
+  transform: scale(1.05);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+button:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+/* Error message styling */
+.error-message {
+  font-size: 0.875rem;
+  color: #d9534f;
+  margin-top: 0.25rem;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 rgba(136, 136, 136, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(136, 136, 136, 0.4);
+  }
+  100% {
+    box-shadow: 0 0 0 rgba(136, 136, 136, 0.4);
+  }
+}
+
+/* Add pulsing effect to focused elements */
+input:focus,
+textarea:focus {
+  animation: pulse 1s infinite;
+}
+
+
+/* Styles for the form container */
+.dynamic-form {
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles for form groups */
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+/* Button styling */
+.submit-button {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #666;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #444;
+}
